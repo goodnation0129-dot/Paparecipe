@@ -792,12 +792,23 @@
           </div>
         </div>
       </div>
+      <div class="card" onclick="openModal('peanutButterApple')" data-diff="쉬움" data-time="5분">
+        <div class="card-thumb dessert-bg"><img src="peanutbutterapple.png" alt="피넛버터&사과"></div>
+        <div class="card-body">
+          <div class="card-name">피넛버터 & 사과</div>
+          <div class="card-meta">
+            <span class="badge badge-time">⏱ 1분</span>
+            <span class="badge badge-diff">⭐ 쉬움</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- 파스타 -->
   <div class="section" id="pasta">
     <h2 class="section-title">🍝 파스타</h2>
+    <p style="font-size:13px; color:var(--text-light); margin:-16px 0 20px; font-style:italic;">든든파파 최애 메뉴. 클래식한 파스타의 세계</p>
     <div class="filter-wrap">
       <div class="filter-row">
         <span class="filter-label">난이도</span>
@@ -858,6 +869,15 @@ const recipes = {
       '바싹 구운 토스트 위에 구운 바나나를 올려 완성!'
     ],
     tip: '아이용은 바나나를 먹기 좋은 크기로 잘라주세요. 치즈가 있다면 얇게 슬라이스해서 올리면 더 맛있어요. 팬에 토스트를 눕혀 구울 수 있다면 슬라이스 치즈나 모짜렐라 치즈를 얹어 녹여보세요!'
+  },
+  peanutButterApple: {
+    emoji: '🍎', name: '피넛버터 & 사과', time: '1분', diff: '⭐ 쉬움', kcal: null,
+    image: 'peanutbutterapple.png',
+    ingredients: ['사과 적당량', '피넛버터 적당량'],
+    steps: [
+      '사과를 먹기 좋은 크기로 썰고, 적당량의 피넛버터를 덜어 같이 먹으면 완성!'
+    ],
+    tip: '사과 껍질에는 영양분이 많으니 깨끗하게 씻어 껍질째 먹어요. 땅콩버터는 가급적 원재료에 땅콩 100%인 것을 고르세요!'
   },
   eggInHell: {
     emoji: '🍅', name: '에그인헬', time: '15분', diff: '⭐ 쉬움', kcal: null,
@@ -1000,7 +1020,8 @@ const cardCategory = {
   fruitYogurt: 'dessert',
   crabNurungji: 'main',
   frittata: 'sub',
-  eggInHell: 'main'
+  eggInHell: 'main',
+  peanutButterApple: 'dessert'
 };
 
 const categoryName = {
