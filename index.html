@@ -836,6 +836,16 @@
           </div>
         </div>
       </div>
+      <div class="card" onclick="openModal('aglioOlio')" data-diff="보통" data-time="15분이상">
+        <div class="card-thumb pasta-bg"><img src="aglioeolio.png" alt="알리오 올리오"></div>
+        <div class="card-body">
+          <div class="card-name">알리오 올리오</div>
+          <div class="card-meta">
+            <span class="badge badge-time">⏱ 15분</span>
+            <span class="badge badge-diff">⭐⭐ 보통</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -869,6 +879,23 @@ const recipes = {
       '바싹 구운 토스트 위에 구운 바나나를 올려 완성!'
     ],
     tip: '아이용은 바나나를 먹기 좋은 크기로 잘라주세요. 치즈가 있다면 얇게 슬라이스해서 올리면 더 맛있어요. 팬에 토스트를 눕혀 구울 수 있다면 슬라이스 치즈나 모짜렐라 치즈를 얹어 녹여보세요!'
+  },
+  aglioOlio: {
+    emoji: '🧄', name: '알리오 올리오', time: '15분', diff: '⭐⭐ 보통', kcal: null,
+    image: 'aglioeolio.png',
+    ingredients: ['물 1L', '소금 10g', '파스타면 100g (롱 파스타)', '마늘 2개', '페퍼론치노 2개', '올리브유 넉넉히', '파슬리 약간'],
+    steps: [
+      '물 1L에 소금 10g을 넣고 끓인다.',
+      '물이 끓으면 파스타면 100g을 넣고, 봉지 조리시간에서 3분을 뺀 시간만큼 끓인다. (예: 12분 조리 → 9분만)',
+      '면을 끓이는 동안 올리브유를 팬에 넉넉히 붓고 마늘 2개를 편썰어 약불에서 굽는다.',
+      '마늘이 갈색으로 변하기 직전에 페퍼론치노 2개를 넣고 불을 끈다.',
+      '팬을 잠시 식힌 뒤 면수 150ml를 팬에 넣는다.',
+      '파스타 완성 2~3분 전에 팬에 다시 불을 올린다.',
+      '파스타가 다 끓었으면 면을 팬으로 옮겨 나머지 3분을 끓인다.',
+      '면수가 많이 줄어들고 팬을 살짝 기울였을 때 면수가 살짝 고이면, 불을 끄거나 약불로 줄이고 파슬리를 넣는다.',
+      '면을 계속 휘저어 만테까레하여 올리브유 소스와 잘 흡착되면 완성!'
+    ],
+    tip: '쉬워 보이지만 재료가 적어 생각보다 어려운 파스타예요. 모든 면은 알단테 기준으로 냄비에서 -3분, 팬에서 3분! 마늘은 다져 넣으면 향이 더 진해지지만 절대 태우면 안 돼요. 만테까레가 핵심! 팬을 30도 기울였을 때 면수가 살짝 고이는 타이밍이 딱 맞아요. 만테까레는 약불 또는 불 끄고, 집게로 면을 강하게 돌려줘도 충분해요.'
   },
   peanutButterApple: {
     emoji: '🍎', name: '피넛버터 & 사과', time: '1분', diff: '⭐ 쉬움', kcal: null,
@@ -1021,7 +1048,8 @@ const cardCategory = {
   crabNurungji: 'main',
   frittata: 'sub',
   eggInHell: 'main',
-  peanutButterApple: 'dessert'
+  peanutButterApple: 'dessert',
+  aglioOlio: 'pasta'
 };
 
 const categoryName = {
