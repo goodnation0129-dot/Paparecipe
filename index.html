@@ -771,6 +771,16 @@
           </div>
         </div>
       </div>
+      <div class="card" onclick="openModal('parsleyMushroom')" data-diff="쉬움" data-time="5분">
+        <div class="card-thumb sub-bg"><img src="parsleyfungi.png" alt="파슬리 버섯 볶음"></div>
+        <div class="card-body">
+          <div class="card-name">파슬리 버섯 볶음</div>
+          <div class="card-meta">
+            <span class="badge badge-time">⏱ 5분</span>
+            <span class="badge badge-diff">⭐ 쉬움</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -918,6 +928,17 @@ const recipes = {
       '사과를 먹기 좋은 크기로 썰고, 적당량의 피넛버터를 덜어 같이 먹으면 완성!'
     ],
     tip: '사과 껍질에는 영양분이 많으니 깨끗하게 씻어 껍질째 먹어요. 땅콩버터는 가급적 원재료에 땅콩 100%인 것을 고르세요!'
+  },
+  parsleyMushroom: {
+    emoji: '🍄', name: '파슬리 버섯 볶음', time: '5분', diff: '⭐ 쉬움', kcal: null,
+    image: 'parsleyfungi.png',
+    ingredients: ['버섯 적당량', '버터 약간', '올리브유 약간', '마늘 1개', '파슬리 약간'],
+    steps: [
+      '원하는 버섯을 먹기 좋은 크기로 썰어준다.',
+      '팬에 올리브유와 버터를 두르고 중불에서 버섯과 다진 마늘을 넣고 볶아준다.',
+      '버섯이 다 볶아지면 다진 파슬리를 넣고 약불에서 살짝 더 볶으면 완성!'
+    ],
+    tip: '버섯은 양송이버섯이 가장 잘 어울려요 🍄'
   },
   overnightOatmeal: {
     emoji: '🥣', name: '오버나이트 오트밀', time: '10분', diff: '⭐ 쉬움', kcal: null,
@@ -1074,7 +1095,8 @@ const cardCategory = {
   eggInHell: 'main',
   peanutButterApple: 'dessert',
   aglioOlio: 'pasta',
-  overnightOatmeal: 'main'
+  overnightOatmeal: 'main',
+  parsleyMushroom: 'sub'
 };
 
 const categoryName = {
